@@ -1,0 +1,20 @@
+<% last5.forEach((contest) => { %>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Contest Name  </th>
+                <th scope="col">Contest Date  </th>
+                <th scope="col">Contest Ranking  </th>
+                <th scope="col">Rating  </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= contest.contest.title  %></td>
+                <td><%= contest.contest.startTime  %></td>
+                <td><%= contest.ranking   %></td>
+                <td><%= contest.rating   %></td>
+            </tr>
+        </tbody>
+    </table>
+<% }); %>
