@@ -74,15 +74,14 @@ Load tested locally with [autocannon](https://github.com/mcollina/autocannon) ag
 autocannon -c 50 -d 10 -m POST -H "Content-Type: application/x-www-form-urlencoded" -b "username=<leetcode-username>" http://localhost:8000/submit
 ```
 
-Results (3 runs):
+**Results (3 runs):**
 
-Metric	Run 1	Run 2	Run 3
-Requests	680 in 10.17s	920 in 10.18s	962 in 10.17s
-Avg Req/Sec	63	87	95
-Avg Latency	713 ms	560 ms	—
-Data Read	6.35 MB	8.77 MB	9.19 MB
+| Metric | Run 1 | Run 2 | Run 3 |
+|---|---|---|---|
+| Requests | 680 in 10.17s | 920 in 10.18s | 962 in 10.17s |
+| Avg Req/Sec | 63 | 87 | 95 |
+| Avg Latency | 713 ms | 560 ms | — |
+| Data Read | 6.35 MB | 8.77 MB | 9.19 MB |
 
-
-Average across runs: ~82 req/sec (range: 63-95). Throughput varies run-to-run since it's bound by LeetCode's live GraphQL API response time rather than this server alone   every request triggers a fresh external fetch with no caching layer.
-
+**Average across runs: ~82 req/sec** (range: 63-95). Throughput varies run-to-run since it's bound by LeetCode's live GraphQL API response time rather than this server alone — every request triggers a fresh external fetch with no caching layer.
 
