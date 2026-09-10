@@ -83,6 +83,6 @@ Avg Latency	713 ms	560 ms	—
 Data Read	6.35 MB	8.77 MB	9.19 MB
 
 
-Average across runs: ~82 req/sec (range: 63-95). Throughput varies run-to-run since it's bound by LeetCode's live GraphQL API response time rather than this server alone — every request triggers a fresh external fetch with no caching layer.
+Average across runs: ~82 req/sec (range: 63-95). Throughput varies run-to-run since it's bound by LeetCode's live GraphQL API response time rather than this server alone   every request triggers a fresh external fetch with no caching layer.
 
 
